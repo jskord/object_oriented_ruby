@@ -12,7 +12,7 @@ class Car
   end
 
   def print_make_and_model
-    puts "this car is a #{@make} #{@model}"
+    puts "this car is a #{@make} #{@model} and it costs #{@price}"
   end
 
 end
