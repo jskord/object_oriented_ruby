@@ -5,18 +5,18 @@ car_3 = {:make => "ford", :model => "escort", :price => 6000}
 puts "the make of the car is " + car_1[:make] 
 
 class Car
-  def initialize(make, model, price)
-    @make = make
-    @model = model
-    @price = price
+  def initialize(input_options)
+    @make = input_options[:make]
+    @model = input_options[:model]
+    @price = input_options[:price]
   end
 
-  def print_make_and_model
+  def print_make_model_and_price
     puts "this car is a #{@make} #{@model} and it costs #{@price}"
   end
 
 end
 
-car1 = Car.new("honda", "civic", 12000)
+car2 = Car.new({model: "taurus", price: "20,000", make: "honda"})
 
-car1.print_make_and_model
+car2.print_make_model_and_price
